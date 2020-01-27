@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2def166a-3597-4845-949a-907eeb5870df" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lanes.py" beforeDir="false" afterPath="$PROJECT_DIR$/lanes.py" afterDir="false" />
     </list>
@@ -87,7 +86,8 @@
       <option name="presentableId" value="Default" />
       <updated>1580070127085</updated>
       <workItem from="1580070134252" duration="4074000" />
-      <workItem from="1580092027372" duration="7132000" />
+      <workItem from="1580092027372" duration="7189000" />
+      <workItem from="1580145914752" duration="4129000" />
     </task>
     <servers />
   </component>
@@ -95,33 +95,33 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2114" height="407" key="GridCell.Tab.0.bottom" timestamp="1580096045248">
+    <state width="2114" height="407" key="GridCell.Tab.0.bottom" timestamp="1580156761488">
       <screen x="0" y="0" width="2160" height="1440" />
     </state>
-    <state width="2114" height="407" key="GridCell.Tab.0.bottom/0.0.2160.1440@0.0.2160.1440" timestamp="1580096045248" />
-    <state width="2114" height="407" key="GridCell.Tab.0.center" timestamp="1580096045247">
+    <state width="2114" height="407" key="GridCell.Tab.0.bottom/0.0.2160.1440@0.0.2160.1440" timestamp="1580156761488" />
+    <state width="2114" height="407" key="GridCell.Tab.0.center" timestamp="1580156761488">
       <screen x="0" y="0" width="2160" height="1440" />
     </state>
-    <state width="2114" height="407" key="GridCell.Tab.0.center/0.0.2160.1440@0.0.2160.1440" timestamp="1580096045247" />
-    <state width="2114" height="407" key="GridCell.Tab.0.left" timestamp="1580096045247">
+    <state width="2114" height="407" key="GridCell.Tab.0.center/0.0.2160.1440@0.0.2160.1440" timestamp="1580156761488" />
+    <state width="2114" height="407" key="GridCell.Tab.0.left" timestamp="1580156761488">
       <screen x="0" y="0" width="2160" height="1440" />
     </state>
-    <state width="2114" height="407" key="GridCell.Tab.0.left/0.0.2160.1440@0.0.2160.1440" timestamp="1580096045247" />
-    <state width="2114" height="407" key="GridCell.Tab.0.right" timestamp="1580096045248">
+    <state width="2114" height="407" key="GridCell.Tab.0.left/0.0.2160.1440@0.0.2160.1440" timestamp="1580156761488" />
+    <state width="2114" height="407" key="GridCell.Tab.0.right" timestamp="1580156761488">
       <screen x="0" y="0" width="2160" height="1440" />
     </state>
-    <state width="2114" height="407" key="GridCell.Tab.0.right/0.0.2160.1440@0.0.2160.1440" timestamp="1580096045248" />
+    <state width="2114" height="407" key="GridCell.Tab.0.right/0.0.2160.1440@0.0.2160.1440" timestamp="1580156761488" />
     <state x="575" y="310" key="SettingsEditor" timestamp="1580075807121">
       <screen x="0" y="0" width="2160" height="1440" />
     </state>
     <state x="575" y="310" key="SettingsEditor/0.0.2160.1440@0.0.2160.1440" timestamp="1580075807121" />
-    <state x="758" y="503" key="com.intellij.ide.util.TipDialog" timestamp="1580092207887">
+    <state x="757" y="481" key="com.intellij.ide.util.TipDialog" timestamp="1580145919011">
       <screen x="0" y="0" width="2160" height="1440" />
     </state>
-    <state x="758" y="503" key="com.intellij.ide.util.TipDialog/0.0.2160.1440@0.0.2160.1440" timestamp="1580092207887" />
+    <state x="757" y="481" key="com.intellij.ide.util.TipDialog/0.0.2160.1440@0.0.2160.1440" timestamp="1580145919011" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/lane_detection$lanes.coverage" NAME="lanes Coverage Results" MODIFIED="1580081809303" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/lane_detection_opencv$lanes.coverage" NAME="lanes Coverage Results" MODIFIED="1580096045234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lane_detection_opencv$lanes.coverage" NAME="lanes Coverage Results" MODIFIED="1580156633827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
