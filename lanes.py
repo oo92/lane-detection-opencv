@@ -5,7 +5,7 @@ import numpy as np
 def make_coordinates(image, line_parameters):
     slope, intercept = line_parameters
     y1 = image.shape[0]
-    y2 = int(y1 * (3/5))
+    y2 = int(y1 * (3 / 5))
 
     x1 = int((y1 - intercept) / slope)
     x2 = int((y2 - intercept) / slope)
@@ -65,22 +65,44 @@ def region_of_interest(image):
     return masked_image
 
 
-image = cv2.imread('test_image.jpg')
+# image = cv2.imread('test_image.jpg')
+#
+# # Creating a copy of the imagel
+# lane_image = np.copy(image)
+#
+# canny_image = canny(lane_image)
+#
+# cropped_image = region_of_interest(canny_image)
+#
+# lines = cv2.HoughLinesP(cropped_image, 2, np.pi / 180, 100, np.array([]), minLineLength=40, maxLineGap=5)
+#
+# averaged_lines = average_slope_intercept(lane_image, lines)
+# line_image = display_lines(lane_image, averaged_lines)
+#
+# combo_image = cv2.addWeighted(lane_image, 0.8, line_image, 1, 1)
+#
+# # Showing the image on a new window
+# cv2.imshow('result', combo_image)
+# cv2.waitKey(0)
 
-# Creating a copy of the imagel
-lane_image = np.copy(image)
+cap = cv2.VideoCapture("test2.mp4")
+while cap.isOpened():
+    _, frame = cap.read()
+    canny_image = canny(frame)
 
-canny_image = canny(lane_image)
+    cropped_image = region_of_interest(canny_image)
 
-cropped_image = region_of_interest(canny_image)
+    lines = cv2.HoughLinesP(cropped_image, 2, np.pi / 180, 100, np.array([]), minLineLength=40, maxLineGap=5)
 
-lines = cv2.HoughLinesP(cropped_image, 2, np.pi / 180, 100, np.array([]), minLineLength=40, maxLineGap=5)
+    averaged_lines = average_slope_intercept(frame, lines)
+    line_image = display_lines(frame, averaged_lines)
 
-averaged_lines = average_slope_intercept(lane_image, lines)
-line_image = display_lines(lane_image, averaged_lines)
+    combo_image = cv2.addWeighted(frame, 0.8, line_image, 1, 1)
 
-combo_image = cv2.addWeighted(lane_image, 0.8, line_image, 1, 1)
+    # Showing the image on a new window
+    cv2.imshow('result', combo_image)
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
 
-# Showing the image on a new window
-cv2.imshow('result', combo_image)
-cv2.waitKey(0)
+cap.release()
+cv2.destroyAllWindows()
